@@ -11,15 +11,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link href="assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <link href="frontend/assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vFendor/iconfont.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/helper.css">
-    <link rel="stylesheet" href="assets/css/plugins/plugins.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="frontend/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/assets/css/vFendor/iconfont.min.css">
+    <link rel="stylesheet" href="frontend/assets/css/vendor/helper.css">
+    <link rel="stylesheet" href="frontend/assets/css/plugins/plugins.css">
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
     <!-- Modernizr JS -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="frontend/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-2 col-md-4 col-4">
-                            <img src="assets/images/payment.png" alt="">
+                            <img src="frontend/assets/images/payment.png" alt="">
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-4 d-none d-lg-block col-12">
                             <!--Header Menu Area Start-->
@@ -62,7 +62,7 @@
                                             <li><a href="#">language</a>
                                                 <ul>
                                                     <li class="active">
-                                                        <a href="#"><img src="assets/images/icons/en-gb.png" alt="">English</a>
+                                                        <a href="#"><img src="frontend/assets/images/icons/en-gb.png" alt="">English</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -104,7 +104,7 @@
                                     <div class="col-6 col-md-6">
                                         <div class="header-logo">
                                             <a href="index.html">
-                                                <img src="assets/images/HR.png." class="img-fluid" alt="">
+                                                <img src="frontend/assets/images/HR.png." class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -175,7 +175,7 @@
                     <li class="menu-item-has-children"><a href="#">LANGUAGE: ENG</a>
                         <ul class="submenu2">
                             <li>
-                                <a href="javascript:void(0)"><img src="assets/images/icons/en-gb.png" alt=""> English</a>
+                                <a href="javascript:void(0)"><img src="frontend/assets/images/icons/en-gb.png" alt=""> English</a>
                             </li>
                         </ul>
                     </li>
@@ -228,7 +228,7 @@
         <div class="hero-slider section">
 
             <!--Hero Item start-->
-            <div class="hero-item  bg-image" data-bg="assets/images/hero/hero1.jpg">
+            <div class="hero-item  bg-image" data-bg="frontend/assets/images/hero/hero1.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -249,7 +249,7 @@
             <!--Hero Item end-->
 
             <!--Hero Item start-->
-            <!-- <div class="hero-item bg-image" data-bg="assets/images/hero/hero-2.jpg">
+            <!-- <div class="hero-item bg-image" data-bg="frontend/assets/images/hero/hero-2.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -282,7 +282,7 @@
                     <div class="single-banner-item mb-30">
                         <div class="banner-image">
                             <a href="shop.html">
-                                <img src="assets/images/banner/banner16.jpg" alt="">
+                                <img src="frontend/assets/images/banner/banner16.jpg" alt="">
                             </a>
                         </div>
                         <div class="banner-content">
@@ -296,7 +296,7 @@
                     <div class="single-banner-item mb-30">
                         <div class="banner-image">
                             <a href="shop-left-sidebar.html">
-                                <img src="assets/images/banner/banner11.jpg" alt="">
+                                <img src="frontend/assets/images/banner/banner11.jpg" alt="">
                             </a>
                         </div>
                         <div class="banner-content tr-right">
@@ -309,9 +309,6 @@
         </div>
     </div>
     <!-- Banner section End -->
-
-
-
 
     <!--Product section start-->
     <div class="product-section section pt-70 pt-lg-50 pt-md-40 pt-sm-30 pt-xs-20 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-5">
@@ -343,7 +340,7 @@
 
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product2 (2).jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product2 (2).jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -363,7 +360,7 @@
                                     <div class="product-label">
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product6.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product6.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -380,7 +377,7 @@
                                     <div class="product-label">
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product-7.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product-7.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -398,7 +395,7 @@
                             <div class="single-grid-product mb-40">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product8.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product8.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -419,7 +416,7 @@
                                         <span class="sale"></span>
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product4.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product4.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -440,7 +437,7 @@
                                         <span class="sale"></span>
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product9.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product9.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -458,7 +455,7 @@
                             <div class="single-grid-product mb-40">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product10.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product10.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -476,7 +473,7 @@
                             <div class="single-grid-product mb-40">
                                 <div class="product-image">
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product14.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product14.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="product-content">
@@ -497,7 +494,7 @@
                                         <span class="sale"></span>
                                     </div>
                                     <a href="single-product.html">
-                                        <img src="assets/images/product/product.jpg" class="img-fluid" alt="">
+                                        <img src="frontend/assets/images/product/product.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
 
@@ -520,7 +517,6 @@
     </div>
     <!--Product section end-->
 
-
     <!-- Banner section start -->
     <div class="banner-section section pb-40 pb-sm-30 pb-xs-0">
         <div class="container">
@@ -535,9 +531,6 @@
     </div>
     <!-- Banner section End -->
 
-
-
-
     <!--Features section start-->
     <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
         <div class="container">
@@ -547,7 +540,7 @@
                     <!-- Single Feature Start -->
                     <div class="single-feature mb-30">
                         <div class="feature-image">
-                            <img src="assets/images/icons/feature-1.png" class="img-fluid" alt="">
+                            <img src="frontend/assets/images/icons/feature-1.png" class="img-fluid" alt="">
                         </div>
                         <div class="feature-content">
                             <h4 class="title">Home delivery</h4>
@@ -560,7 +553,7 @@
                     <!-- Single Feature Start -->
                     <div class="single-feature mb-30">
                         <div class="feature-image">
-                            <img src="assets/images/icons/feature-2.png" class="img-fluid" alt="">
+                            <img src="frontend/assets/images/icons/feature-2.png" class="img-fluid" alt="">
                         </div>
                         <div class="feature-content">
                             <h4 class="title">Quality Products</h4>
@@ -572,8 +565,6 @@
             </div>
         </div>
         <!--Features section end-->
-
-
 
         <!--Blog section start-->
         <div class="blog-section section pt-65 pt-lg-45 pt-md-35 pt-sm-20 pt-xs-15 pb-65 pb-lg-45 pb-md-35 pb-sm-25 pb-xs-15">
@@ -592,7 +583,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/blog-1.jpg" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/blog-1.jpg" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -607,7 +598,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/blog-2.jpg" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/blog-2.jpg" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -622,7 +613,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/blog-6.jpg" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/blog-6.jpg" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -636,7 +627,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/banner9.jpg" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/banner9.jpg" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -651,7 +642,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/banner5.jpg" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/banner5.jpg" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -667,7 +658,7 @@
                     <div class="blog col-lg-4 col-md-6">
                         <div class="blog-inner mb-30">
                             <div class="blog-media">
-                                <a href="blog-details.html" class="image"><img src="assets/images/blog/testimonial-1.png" alt=""></a>
+                                <a href="blog-details.html" class="image"><img src="frontend/assets/images/blog/testimonial-1.png" alt=""></a>
                             </div>
                             <div class="content">
                                 <ul class="meta">
@@ -681,7 +672,6 @@
 
                 </div>
                 <!--Blog section end-->
-
 
                 <!-- Testimonial Area Start -->
                 <div class="testimonial-section section pb-80 pb-lg-60 pb-md-50 pb-sm-40 pb-xs-40">
@@ -697,7 +687,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-md-2">
                                                                 <!-- <div class="testimonial-image"> -->
-                                                                <!-- <img src="assets/images/testimonial/team/team1.jpg" alt="">
+                                                                <!-- <img src="frontend/assets/images/testimonial/team/team1.jpg" alt="">
                                                             </div> -->
                                                             </div>
                                                             <div class="col-md-7">
@@ -705,7 +695,7 @@
                                                                     <div class="testimonial-inner">
                                                                         <div class="testimonial-author">
                                                                             <!-- <div class="author-thumb">
-                                                                            <img src="assets/images/author/EMMA.png.jpg" alt="">
+                                                                            <img src="frontend/assets/images/author/EMMA.png.jpg" alt="">
                                                                         </div> -->
                                                                             <div class="author-info">
                                                                                 <h4>E. Adekoya</h4>
@@ -725,7 +715,7 @@
                                                         <div class="row align-items-center">
                                                             <div class="col-md-2">
                                                                 <!-- <div class="testimonial-image">
-                                                                    <img src="assets/images/testimonial/team/team2.jpg   " alt="">
+                                                                    <img src="frontend/assets/images/testimonial/team/team2.jpg   " alt="">
                                                                 </div> -->
                                                             </div>
                                                             <div class="col-md-7">
@@ -733,7 +723,7 @@
                                                                     <div class="testimonial-inner">
                                                                         <div class="testimonial-author">
                                                                             <!-- <div class="author-thumb">
-                                                                            <img src="assets/images/author/author4.jpg" alt="">
+                                                                            <img src="frontend/assets/images/author/author4.jpg" alt="">
                                                                         </div> -->
                                                                             <div class="author-info">
                                                                                 <h4>S. OLUWOLE</h4>
@@ -847,7 +837,7 @@
                                                                 </div>
                                                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                                                     <div class="payment-getway text-lg-end text-center">
-                                                                        <img src="assets/images/payment.png" alt="">
+                                                                        <img src="frontend/assets/images/payment.png" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -864,9 +854,7 @@
                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
                                                     </div>
                                                     <div class="modal-body">
                                                         <div class="col-xl-12 col-lg-12">
@@ -876,27 +864,27 @@
                                                                     <div class="product-details-left">
                                                                         <div class="product-details-images">
                                                                             <div class="lg-image">
-                                                                                <img src="assets/images/product/large-product/l-product-1.jpg" alt="">
+                                                                                <img src="frontend/assets/images/product/large-product/l-product-1.jpg" alt="">
                                                                             </div>
                                                                             <div class="lg-image">
-                                                                                <img src="assets/images/product/large-product/l-product-2.jpg" alt="">
+                                                                                <img src="frontend/assets/images/product/large-product/l-product-2.jpg" alt="">
                                                                             </div>
                                                                             <div class="lg-image">
-                                                                                <img src="assets/images/product/large-product/l-product-3.jpg" alt="">
+                                                                                <img src="frontend/assets/images/product/large-product/l-product-3.jpg" alt="">
                                                                             </div>
                                                                             <div class="lg-image">
-                                                                                <img src="assets/images/product/large-product/l-product-4.jpg" alt="">
+                                                                                <img src="frontend/assets/images/product/large-product/l-product-4.jpg" alt="">
                                                                             </div>
                                                                             <div class="lg-image">
-                                                                                <img src="assets/images/product/large-product/l-product-5.jpg" alt="">
+                                                                                <img src="frontend/assets/images/product/large-product/l-product-5.jpg" alt="">
                                                                             </div>
                                                                         </div>
                                                                         <div class="product-details-thumbs">
-                                                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-1.jpg" alt="product image thumb"></div>
-                                                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-2.jpg" alt="product image thumb"></div>
-                                                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-3.jpg" alt="product image thumb"></div>
-                                                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-4.jpg" alt="product image thumb"></div>
-                                                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-5.jpg" alt="product image thumb"></div>
+                                                                            <div class="sm-image"><img src="frontend/assets/images/product/small-product/s-product-1.jpg" alt="product image thumb"></div>
+                                                                            <div class="sm-image"><img src="frontend/assets/images/product/small-product/s-product-2.jpg" alt="product image thumb"></div>
+                                                                            <div class="sm-image"><img src="frontend/assets/images/product/small-product/s-product-3.jpg" alt="product image thumb"></div>
+                                                                            <div class="sm-image"><img src="frontend/assets/images/product/small-product/s-product-4.jpg" alt="product image thumb"></div>
+                                                                            <div class="sm-image"><img src="frontend/assets/images/product/small-product/s-product-5.jpg" alt="product image thumb"></div>
                                                                         </div>
                                                                     </div>
                                                                     <a class="social-icon" href="https://twitter.com/@Adekoya52906792" target="_blank">
@@ -913,17 +901,27 @@
                                         </div>
                                         <!-- Modal Area End -->
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial Area End -->
+            </div>
+        </div>
+    </div>
+    <!--Features section end-->
 
-                                    <!-- Placed js at the end of the document so the pages load faster -->
+    <!-- Placed js at the end of the document so the pages load faster -->
 
-                                    <!-- All jquery file included here -->
-                                    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-                                    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-                                    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-                                    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
-                                    <script src="assets/js/vendor/bootstrap.min.js"></script>
-                                    <script src="assets/js/plugins/plugins.js"></script>
-                                    <script src="assets/js/main.js"></script>
+    <!-- All jquery file included here -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="frontend/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
+    <script src="frontend/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="frontend/assets/js/plugins/plugins.js"></script>
+    <script src="frontend/assets/js/main.js"></script>
 
 </body>
 
