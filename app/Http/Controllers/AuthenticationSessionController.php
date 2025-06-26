@@ -20,7 +20,8 @@ class AuthenticationSessionController extends Controller
         ]);
 
         if (auth()->attempt($request->only('email', 'password'))) {
-            return redirect()->intended('dashboard');
+            return redirect()->route('dashboard')
+                ->with('status', 'You have been logged in successfully.');
         }
 
         return back()->withErrors([
