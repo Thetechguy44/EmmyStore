@@ -36,7 +36,7 @@
                             </button>
                         </li>
                         <li class="d-none d-lg-block">
-                            <h5 class="mb-0">Good Morning, John Smith</h5>
+                            <h5 class="mb-0">{{ 'Hello, ' . Auth::user()->name }}</h5>
                         </li>
                     </ul>
 
@@ -59,7 +59,7 @@
                             <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <img src="backend/assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle">
                                 <span class="pro-user-name ms-1">
-                                    John Smith <i class="mdi mdi-chevron-down"></i> 
+                                    {{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i> 
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end profile-dropdown" style="">
@@ -128,21 +128,28 @@
                         <li class="menu-title">Menu</li>
 
                         <li>
-                            <a href="#sidebarDashboards" data-bs-toggle="collapse">
+                            <a href="{{ route('dashboard') }}">
                                 <i data-feather="home"></i>
                                 <span> Dashboard </span>
+                                {{-- <span class="menu-arrow"></span> --}}
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Pages</li>
+
+                        <li>
+                            <a href="#sidebarForms" data-bs-toggle="collapse">
+                                <i data-feather="briefcase"></i>
+                                <span> Forms </span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <div class="collapse" id="sidebarDashboards">
+                            <div class="collapse" id="sidebarForms">
                                 <ul class="nav-second-level">
                                     <li>
-                                        <a class='tp-link' href='index.html'>CRM</a>
+                                        <a class='tp-link' href='{{ url('/products') }}'>View Products</a>
                                     </li>
                                     <li>
-                                        <a class='tp-link' href='forms-elements.html'>Uploads</a>
-                                    </li>
-                                    <li>
-                                        <a class='tp-link' href='tables-basic.html'>View works</a>
+                                        <a class='tp-link' href='{{ url('/create-product') }}'>Add Products</a>
                                     </li>
                                 </ul>
                             </div>
@@ -189,21 +196,28 @@
                         <li class="menu-title">Menu</li>
 
                         <li>
-                            <a href="#sidebarDashboards" data-bs-toggle="collapse">
+                            <a href="{{ route('dashboard') }}">
                                 <i data-feather="home"></i>
                                 <span> Dashboard </span>
+                                {{-- <span class="menu-arrow"></span> --}}
+                            </a>
+                        </li>
+                        
+                        <li class="menu-title">Pages</li>
+
+                        <li>
+                            <a href="#sidebarForms" data-bs-toggle="collapse">
+                                <i data-feather="briefcase"></i>
+                                <span> Forms </span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <div class="collapse" id="sidebarDashboards">
+                            <div class="collapse" id="sidebarForms">
                                 <ul class="nav-second-level">
                                     <li>
-                                        <a class='tp-link' href='index.html'>CRM</a>
+                                        <a class='tp-link' href='{{ url('/products') }}'>View Products</a>
                                     </li>
                                     <li>
-                                        <a class='tp-link' href='forms-elements.html'>Uploads</a>
-                                    </li>
-                                    <li>
-                                        <a class='tp-link' href='tables-basic.html'>View works</a>
+                                        <a class='tp-link' href='{{ url('/create-product') }}'>Add Products</a>
                                     </li>
                                 </ul>
                             </div>
