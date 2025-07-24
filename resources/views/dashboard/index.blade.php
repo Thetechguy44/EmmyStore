@@ -10,6 +10,16 @@
                     <h4 class="fs-18 fw-semibold m-0">Dashboard</h4>
                 </div>
             </div>
+            @if (Session::has('success'))
+                <div class="toast show align-items-center text-white bg-primary border-0 mb-4" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            {{ Session::get('success') }}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            @endif
 
             <!-- start row -->
             <div class="row">
