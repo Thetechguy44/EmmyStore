@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\ProductImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
@@ -74,12 +75,13 @@ class ProductController extends Controller
         return view('dashboard.product.edit-product', compact('product'));
     }
 
+
     public function update(Request $request, $id)
     {
         $product = Product::findOrFail($id);
 
-        // Validate the request
-        $validatedData = $request->validate([
+        // Validation
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'price' => 'required|numeric|min:0',
@@ -89,26 +91,34 @@ class ProductController extends Controller
             'brand' => 'nullable|string|max:255',
             'stock' => 'required|integer|min:0',
             'is_active' => 'boolean',
-            'removed_images' => 'nullable|array', // For tracking removed images
-            'default_image' => 'nullable|integer' // For tracking the default image
+            'removed_images' => 'nullable|array',
+            'default_image' => 'nullable|integer'
         ]);
 
-        // Update the product
-        $product->update($validatedData);
+        // Handle validation failure
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        // Update product with validated data
+        $product->update($validator->validated());
 
         // Handle removed images
         if ($request->filled('removed_images')) {
             $removedImageIds = explode(',', $request->removed_images);
-            $removedImageIds = array_filter($removedImageIds); // Remove empty values
-            
+            $removedImageIds = array_filter($removedImageIds);
+
             foreach ($removedImageIds as $imageId) {
                 $image = ProductImage::where('product_id', $product->id)
                                     ->where('id', $imageId)
                                     ->first();
-                
+
                 if ($image) {
-                    // Delete the physical file
                     $imagePath = 'images/products/' . $image->image_path;
+
+                    // Delete file if exists
                     if (Storage::disk('public')->exists($imagePath)) {
                         Storage::disk('public')->delete($imagePath);
                     } elseif (file_exists(public_path('storage/' . $imagePath))) {
@@ -116,20 +126,20 @@ class ProductController extends Controller
                     } elseif (file_exists(public_path($imagePath))) {
                         unlink(public_path($imagePath));
                     }
-                    
-                    // Delete the database record
+
+                    // Delete record
                     $image->delete();
                 }
             }
         }
-        
+
         // Handle new image uploads
         if ($request->hasfile('new_images')) {
             foreach ($request->file('new_images') as $file) {
                 $extension = $file->getClientOriginalExtension();
                 $filename = time() . '_' . uniqid() . '.' . $extension;
                 $file->move('images/products', $filename);
-                
+
                 ProductImage::create([
                     'product_id' => $product->id,
                     'image_path' => $filename,
@@ -137,25 +147,22 @@ class ProductController extends Controller
                 ]);
             }
         }
-        
+
         // Handle default image change
         if ($request->has('default_image')) {
-            // Remove current default
             ProductImage::where('product_id', $product->id)
                         ->update(['is_default' => false]);
-            
-            // Set new default
+
             $newDefault = ProductImage::find($request->default_image);
             if ($newDefault) {
                 $newDefault->is_default = true;
                 $newDefault->save();
-                
-                // Update product's main image reference
+
                 $product->image = $newDefault->image_path;
                 $product->save();
             }
         }
-        
+
         return redirect()->route('products')->with('success', 'Product updated successfully.');
     }
 
