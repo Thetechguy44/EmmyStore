@@ -65,11 +65,11 @@
                             <div class="dropdown-menu dropdown-menu-end profile-dropdown" style="">
                                 <!-- item-->
                                 <div class="dropdown-header noti-title">
-                                    <h6 class="text-overflow m-0">Welcome !</h6>
+                                    <h6 class="text-overflow m-0">Welcome {{ Auth::user()->name }}!</h6>
                                 </div>
     
                                 <!-- item-->
-                                <a class="dropdown-item notify-item" href="pages-profile.html">
+                                <a class="dropdown-item notify-item" href="{{ route('profile.edit') }}">
                                     <i class="mdi mdi-account-circle-outline fs-16 align-middle"></i>
                                     <span>My Account</span>
                                 </a>
@@ -154,6 +154,23 @@
                                 </ul>
                             </div>
                         </li>
+                        <li>
+                            <a href="#sidebarBanners" data-bs-toggle="collapse">
+                                <i data-feather="briefcase"></i>
+                                <span> Banner </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarBanners">
+                                <ul class="nav-second-level">
+                                    <li>
+                                        <a class='tp-link' href='{{ url('/banners') }}'>View Banners</a>
+                                    </li>
+                                    <li>
+                                        <a class='tp-link' href='{{ url('/create-banner') }}'>Add Banners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
@@ -206,18 +223,35 @@
                         <li class="menu-title">Pages</li>
 
                         <li>
-                            <a href="#sidebarForms" data-bs-toggle="collapse">
+                            <a href="#sidebarProducts" data-bs-toggle="collapse">
                                 <i data-feather="briefcase"></i>
-                                <span> Forms </span>
+                                <span> Products </span>
                                 <span class="menu-arrow"></span>
                             </a>
-                            <div class="collapse" id="sidebarForms">
+                            <div class="collapse" id="sidebarProducts">
                                 <ul class="nav-second-level">
                                     <li>
                                         <a class='tp-link' href='{{ url('/products') }}'>View Products</a>
                                     </li>
                                     <li>
                                         <a class='tp-link' href='{{ url('/create-product') }}'>Add Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#sidebarBanners" data-bs-toggle="collapse">
+                                <i data-feather="briefcase"></i>
+                                <span> Banner </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarBanners">
+                                <ul class="nav-second-level">
+                                    <li>
+                                        <a class='tp-link' href='{{ url('/banners') }}'>View Banners</a>
+                                    </li>
+                                    <li>
+                                        <a class='tp-link' href='{{ url('/create-banner') }}'>Add Banners</a>
                                     </li>
                                 </ul>
                             </div>
