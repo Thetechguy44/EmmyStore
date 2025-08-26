@@ -25,5 +25,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/products', [ProductController::class, 'index'])->name('products');
     Route::get('/create-product', [ProductController::class, 'create'])->name('create.product');
     Route::post('/store-product', [ProductController::class, 'store'])->name('store.product');
+    Route::get('/edit-product/{product}', [ProductController::class, 'edit'])->name('edit.product');
+    Route::put('/update-product/{product}', [ProductController::class, 'update'])->name('update.product');
+    Route::delete('/delete-product/{product}', [ProductController::class, 'destroy'])->name('delete.product');
     // Add more authenticated routes here
 });
