@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\ProductImage;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
@@ -19,5 +20,13 @@ class Product extends Model
         'slug',
     ];
 
-    // Additional methods and relationships can be defined here
+    public function images()
+    {
+        return $this->hasMany(ProductImage::class);
+    }
+
+    public function defaultImage()
+    {
+        return $this->hasOne(ProductImage::class)->where('is_default', true);
+    }
 }
