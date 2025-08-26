@@ -67,10 +67,10 @@
                                                     @endif
                                                 </td>
                                                 <td>
-                                                    <a aria-label="anchor" class="me-1" data-bs-toggle="tooltip" data-bs-original-title="Edit">
+                                                    <a href="{{ route('edit.product', $product->id) }}" aria-label="anchor" class="me-1" data-bs-toggle="tooltip" data-bs-original-title="Edit">
                                                         <i class="mdi mdi-pencil-outline fs-16 text-muted"></i>
                                                     </a>
-                                                    <a aria-label="anchor" class="" data-bs-toggle="tooltip" data-bs-original-title="Delete">
+                                                    <a href="#" aria-label="anchor" class="" data-bs-toggle="modal" data-bs-target="#deleteProductModal" data-product-id="{{ $product->id }}" data-bs-original-title="Delete">
                                                         <i class="mdi mdi-delete fs-16 text-muted"></i>
                                                     </a>
                                                 </td>
@@ -90,4 +90,46 @@
             </div>
         </div>
     </div>
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="deleteProductModal" tabindex="-1" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="deleteProductModalLabel">Confirm Deletion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <div class="mb-3">
+                        <i class="mdi mdi-alert-circle-outline text-warning" style="font-size: 48px;"></i>
+                    </div>
+                    <h6 class="mb-2">Are you sure you want to delete this product?</h6>
+                    <p class="text-muted mb-0">This action cannot be undone.</p>
+                </div>
+                <div class="modal-footer border-top-0 justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <form id="deleteProductForm" method="POST" style="display: inline;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Delete Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteModal = document.getElementById('deleteProductModal');
+        const deleteForm = document.getElementById('deleteProductForm');
+        
+        // When modal is triggered, update the form action with the correct product ID
+        deleteModal.addEventListener('show.bs.modal', function(event) {
+            const button = event.relatedTarget; // Button that triggered the modal
+            const productId = button.getAttribute('data-product-id');
+            
+            // Update the form action - adjust the route name as needed
+            deleteForm.action = `{{ route('delete.product', '') }}/${productId}`;
+        });
+    });
+    </script>
 @endsection
