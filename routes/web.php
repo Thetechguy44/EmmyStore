@@ -35,6 +35,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::put('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::put('/profile/change-password', [ProfileController::class, 'changePassword'])->name('profile.change.password');
+    Route::put('/profile/update-settings', [ProfileController::class, 'updateSettings'])->name('profile.update.settings');
 
     // Route for banners
     Route::get('/banners', [BannerController::class, 'index'])->name('banners');
