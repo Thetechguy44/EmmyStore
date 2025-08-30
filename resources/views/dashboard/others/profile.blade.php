@@ -222,7 +222,7 @@
 
                                 <div class="row">
                                     <div class="col-lg-6 col-xl-6">
-                                        <form action="{{ route('profile.update') }}" method="POST">
+                                        <form action="{{ route('profile.update.settings') }}" method="POST">
                                             @csrf
                                             @method('PUT')
                                             <div class="card border">
@@ -237,9 +237,9 @@
 
                                                 <div class="card-body">
                                                     <div class="form-group mb-3 row">
-                                                        <label class="form-label">AppName</label>
+                                                        <label class="form-label">Company Name</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" name="name" type="text" value="{{ auth()->user()->name }}">
+                                                            <input class="form-control" name="company_name" type="text" value="{{ $setting->company_name ?? '' }}">
                                                         </div>
                                                     </div>
 
@@ -248,7 +248,7 @@
                                                         <div class="col-lg-12 col-xl-12">
                                                             <div class="input-group">
                                                                 <span class="input-group-text"><i class="mdi mdi-phone-outline"></i></span>
-                                                                <input class="form-control" name="phone" type="text" placeholder="Phone" aria-describedby="basic-addon1" value="{{ auth()->user()->phone }}">
+                                                                <input class="form-control" name="company_phone" type="text" placeholder="Phone" aria-describedby="basic-addon1" value="{{ $setting->company_phone ?? '' }}">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -258,7 +258,7 @@
                                                         <div class="col-lg-12 col-xl-12">
                                                             <div class="input-group">
                                                                 <span class="input-group-text"><i class="mdi mdi-email"></i></span>
-                                                                <input type="text" class="form-control" name="email" value="{{ auth()->user()->email }}" placeholder="Email" aria-describedby="basic-addon1">
+                                                                <input type="text" class="form-control" name="company_email" value="{{ $setting->company_email ?? '' }}" placeholder="Email" aria-describedby="basic-addon1">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -266,62 +266,69 @@
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">About Company</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <textarea class="form-control" type="text" name="about_company">{{ auth()->user()->about_company }}</textarea>
+                                                            <textarea class="form-control" type="text" name="company_description">{{ $setting->company_description ?? '' }}</textarea>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Country</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="country" value="{{ auth()->user()->country }}">
+                                                            <input class="form-control" type="text" name="company_country" value="{{ $setting->company_country ?? '' }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">City</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="city" value="{{ auth()->user()->city }}">
+                                                            <input class="form-control" type="text" name="company_city" value="{{ $setting->company_city ?? '' }}">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="form-group mb-3 row">
+                                                        <label class="form-label">State</label>
+                                                        <div class="col-lg-12 col-xl-12">
+                                                            <input class="form-control" type="text" name="company_state" value="{{ $setting->company_state ?? '' }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Address</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="address" value="{{ auth()->user()->address }}">
+                                                            <input class="form-control" type="text" name="company_address" value="{{ $setting->company_address ?? '' }}">
                                                         </div>
                                                     </div>
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Whatsapp No</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="whatsapp" value="{{ auth()->user()->whatsapp }}">
+                                                            <input class="form-control" type="text" name="company_whatsapp" value="{{ $setting->company_whatsapp ?? '' }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Facebook URL</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="facebook" value="{{ auth()->user()->facebook }}">
+                                                            <input class="form-control" type="text" name="company_facebook" value="{{ $setting->company_facebook ?? '' }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Instagram URL</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="instagram" value="{{ auth()->user()->instagram }}">
+                                                            <input class="form-control" type="text" name="company_instagram" value="{{ $setting->company_instagram ?? '' }}">
                                                         </div>
                                                     </div>
                                                     
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Twitter(X) URL</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" type="text" name="twitter" value="{{ auth()->user()->twitter }}">
+                                                            <input class="form-control" type="text" name="company_twitter" value="{{ $setting->company_twitter ?? '' }}">
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Footer</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <textarea class="form-control" type="text" name="footer">{{ auth()->user()->footer }}</textarea>
+                                                            <textarea class="form-control" type="text" name="company_footer">{{ $setting->company_footer ?? '' }}</textarea>
                                                         </div>
                                                     </div>
 
@@ -336,7 +343,7 @@
                                         </form>
                                     </div>
                                     <div class="col-lg-6 col-xl-6">
-                                        <form action="{{ route('profile.change.password') }}" method="POST">
+                                        <form action="{{ route('profile.update.settings') }}" method="POST">
                                         @csrf
                                         @method('PUT')
                                             <div class="card border mb-0">
@@ -350,27 +357,31 @@
                                                 </div>
 
                                                 <div class="card-body mb-0">
-                                                    <div class="form-group mb-3 row">
-                                                        <div class="col-lg-4 col-xl-4">
-                                                            <img src="{{ asset(auth()->user()->logo) }}" alt="Logo" class="img-fluid">
+                                                    @if ($setting && $setting->company_logo)
+                                                        <div class="form-group mb-3 row">
+                                                            <div class="col-lg-4 col-xl-4">
+                                                                <img src="{{ asset('images/logos/' . $setting->company_logo) }}" alt="Logo" class="img-fluid">
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    @endif
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Logo</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" name="logo" type="file">
+                                                            <input class="form-control" name="company_logo" type="file">
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-group mb-3 row">
-                                                        <div class="col-lg-4 col-xl-4">
-                                                            <img src="{{ asset(auth()->user()->logo) }}" alt="Logo" class="img-fluid">
+                                                    @if ($setting && $setting->company_favicon)
+                                                        <div class="form-group mb-3 row">
+                                                            <div class="col-lg-4 col-xl-4">
+                                                                <img src="{{ asset('images/logos/' . $setting->company_favicon) }}" alt="Favicon" class="img-fluid">
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    @endif
                                                     <div class="form-group mb-3 row">
                                                         <label class="form-label">Favicon</label>
                                                         <div class="col-lg-12 col-xl-12">
-                                                            <input class="form-control" name="favicon" type="file">
+                                                            <input class="form-control" name="company_favicon" type="file">
                                                         </div>
                                                     </div>
 
