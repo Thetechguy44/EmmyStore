@@ -57,7 +57,14 @@
     
                         <li class="dropdown notification-list topbar-dropdown">
                             <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="backend/assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle">
+                                @php
+                                    $nameParts = explode(' ', auth()->user()->name);
+                                    $initials = strtoupper(substr($nameParts[0], 0, 1) . (isset($nameParts[1]) ? substr($nameParts[1], 0, 1) : ''));
+                                @endphp
+                                <span class="rounded-circle" style="background-color: #468f53ff; color: white; width: 50px; height: 50px; border-radius: 50%;">
+                                    {{ $initials }}
+                                </span>
+                                {{-- <img src="backend/assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle"> --}}
                                 <span class="pro-user-name ms-1">
                                     {{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i> 
                                 </span>
