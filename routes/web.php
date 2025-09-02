@@ -4,12 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthenticationSessionController;
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', [FrontendController::class, 'home'])->name('home');
+Route::get('/product-details/{product}', [FrontendController::class, 'productPage'])->name('details');
+Route::get('/shop', [FrontendController::class, 'shop'])->name('shop');
 
 Route::get('/login', [AuthenticationSessionController::class, 'create'])
     ->name('login');
