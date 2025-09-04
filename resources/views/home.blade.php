@@ -99,10 +99,10 @@
                         <h2>Popular Furniture</h2>
                     </div>
                     <div class="product-tab mb-50 mb-sm-30 mb-xs-20">
-                        <ul class="nav">
-                            <li><a class="active show" data-toggle="tab" href="#home">HOME</a></li>
-                            <li><a data-toggle="tab" href="#office">OFFICE</a></li>
-                        </ul>
+                        <!-- <ul class="nav">
+                            <li><a class="active show" data-toggle="tab" href="#home">HOME </a></li>
+                            <li><a data-toggle="tab" href="#office"> OFFICE</a></li>
+                        </ul> -->
                     </div>
                 </div>
             </div>
