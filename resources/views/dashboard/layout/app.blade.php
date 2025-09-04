@@ -64,7 +64,7 @@
                                 <span class="rounded-circle" style="background-color: #468f53ff; color: white; width: 50px; height: 50px; border-radius: 50%;">
                                     {{ $initials }}
                                 </span>
-                                {{-- <img src="backend/assets/images/users/user-5.jpg" alt="user-image" class="rounded-circle"> --}}
+                                {{-- <img src="{{ asset('images/logo/YA.jpg') }}" alt="user-image" class="rounded-circle"> --}}
                                 <span class="pro-user-name ms-1">
                                     {{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i> 
                                 </span>
@@ -114,18 +114,18 @@
                     <div class="logo-box">
                         <a class='logo logo-light' href='index.html'>
                             <span class="logo-sm">
-                                    <img src="backend/assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="22">
                                 </span>
                             <span class="logo-lg">
-                                    <img src="backend/assets/images/logo-light.png" alt="" height="24">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="24">
                                 </span>
                         </a>
                         <a class='logo logo-dark' href='index.html'>
                             <span class="logo-sm">
-                                    <img src="backend/assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="22">
                                 </span>
                             <span class="logo-lg">
-                                    <img src="backend/assets/images/logo-dark.png" alt="" height="24">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="24">
                                 </span>
                         </a>
                     </div>
@@ -199,18 +199,18 @@
                     <div class="logo-box">
                         <a class='logo logo-light' href='index.html'>
                             <span class="logo-sm">
-                                    <img src="backend/assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="22">
                                 </span>
                             <span class="logo-lg">
-                                    <img src="backend/assets/images/logo-light.png" alt="" height="24">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="24">
                                 </span>
                         </a>
                         <a class='logo logo-dark' href='index.html'>
                             <span class="logo-sm">
-                                    <img src="backend/assets/images/logo-sm.png" alt="" height="22">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="22">
                                 </span>
                             <span class="logo-lg">
-                                    <img src="backend/assets/images/logo-dark.png" alt="" height="24">
+                                    <img src="{{ asset('images/logo/YA.jpg') }}" alt="" height="24">
                                 </span>
                         </a>
                     </div>
