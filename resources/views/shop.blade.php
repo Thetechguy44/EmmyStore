@@ -93,7 +93,14 @@
                                                                         <div class="product-content">
                                                                             <h3 class="title"> <a href="{{ route('details', $product->id) }}">{{ $product->name }}</a></h3>
                                                                             <p class="product-price">
-                                                                                <span class="discounted-price">NGN {{ number_format($product->discount_price, 2) ?? number_format($product->price, 2) }}</span>
+                                                                                <span class="discounted-price">NGN 
+                                                                                    @if ($product->discount_price > 0)
+                                                                                        {{ number_format($product->discount_price, 2) }}
+                                                                                    @else
+                                                                                        {{ number_format($product->price, 2) }}
+                                                                                        
+                                                                                    @endif
+                                                                                </span>
                                                                                 @if ($product->discount_price && $product->discount_price < $product->price)
                                                                                     <span class="main-price discounted">NGN {{ number_format($product->price, 2) }}</span>
                                                                                 @endif 
