@@ -456,7 +456,7 @@
                                         <a class="social-icon" href="https://wa.me/+2348023078661" target="blank">
                                             <ion-icon name="logo-whatsapp"></ion-icon>
                                         </a>
-                                        <p class="copyright">&copy;<strong> Y.A Furniture </strong><i class="fa fa-heart text-danger" aria-hidden="true"></i><a href="https://emmydev10.vercel.app/" target="_blank"><strong> Made by Emmytech10 </strong></a></p>
+                                        <p class="copyright">&copy;<strong> Y.A Furniture </strong><a href="https://emmydev10.vercel.app/" target="_blank"><strong> Made by Emmytech10 </strong></a></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
