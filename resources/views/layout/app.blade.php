@@ -6,7 +6,7 @@
     <title>YUSUF ADE FURNITURE || @yield('title')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ asset('frontend/assets/images/favicon.ico') }}" type="img/x-icon" rel="shortcut icon">
+    <link href="{{ asset('frontend/assets/images/New.jpg') }}" type="img/x-icon" rel="shortcut icon">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/iconfont.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/vendor/helper.css') }}">
@@ -23,9 +23,9 @@
             <div class="header-deafult-area">
                 <div class="container">
                     <div class="row align-items-center">
-                        {{-- <div class="col-xl-3 col-lg-2 col-md-4 col-4">
+                        <div class="col-xl-3 col-lg-2 col-md-4 col-4">
                             <img src="frontend/assets/images/payment.png" alt="">
-                        </div> --}}
+                        </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 d-none d-lg-block col-12">
                             <!--Header Menu Area Start-->
                             <div class="header-menu-area text-center">
@@ -315,18 +315,15 @@
                         <div class="off-canvas-contact-widget">
                             <div class="header-contact-info">
                                 <ul class="header-contact-info-list">
-                                    <li><i class="ion-android-phone-portrait"></i> <a href="tel://12452456012">(1245) 2456 012 </a></li>
-                                    <li><i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+                                    <li><i class="ion-android-phone-portrait"></i> <a href="tel://+234-80-2307-8661">(+234-80-2307-8661) </a></li>
+                                    <li><i class="ion-android-mail"></i> <a href="mailto:info@yourdomain.com">yusufadefurniture@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!--Off Canvas Widget Social Start-->
                         <div class="off-canvas-widget-social">
-                            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" title="Youtube"><i class="fa fa-youtube-play"></i></a>
-                            <a href="#" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+                            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a
+                            
                         </div>
                         <!--Off Canvas Widget Social End-->
                     </div>
@@ -360,13 +357,13 @@
         <!-- Newsletter Section Start -->
         <div class="newsletter-section section bg-gray-two pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-95 pb-lg-75 pb-md-65 pb-sm-60 pb-xs-50">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="newsletter-content">
-                            <h2>Subscribe Our Newsletter</h2>
-                            <p>Subscribe Today for free and save 10% on your first purchase.</p>
-                        </div>
-                    </div>
+                <!-- <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="newsletter-content"> -->
+                            <h2>About Us</h2>
+                            <p> Y.A Furniture is a reputable company committed to providing high-quality, functional, and aesthetically ppealing furniture for residential and commercial spaces. We take pride in our craftsmanship, attention to detail, and use of premium materials to ensure durability and comfort. Our goal is to enhance living and working environments through innovative designs that reflect style, elegance, and practicality.</p>
+                        <!-- </div> -->
+                    <!-- </div> -->
                     {{-- <div class="col-lg-6">
                         <div class="newsletter-wrap">
                             <div class="newsletter-form">
@@ -385,7 +382,7 @@
                             <!-- mailchimp-alerts end -->
                         </div>
                     </div> --}}
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <!-- Newsletter Section End -->
@@ -398,10 +395,10 @@
                     <div class="row">
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <div class="footer-widget col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Opening Time</span></h4>
-                            <p class="mb-15">Mon – Fri: 8AM – 10PM</p>
-                            <p class="mb-15">Sat: 9AM-8PM</p>
+                            <p class="mb-15">Mon – Fri: 9AM – 5PM</p>
+                            <p class="mb-15">Sat: 9AM-4PM</p>
                             <p class="mb-15">Sun: Closed</p>
                             <h4 class="opeaning-title">We Work All The Holidays</h4>
                         </div>
@@ -409,36 +406,34 @@
 
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <!-- <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Quick Link</span></h4>
                             <ul class="ft-menu">
-                                <li><a href="#">My account</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Order Tracking</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Shipping Information</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <!--Footer Widget end-->
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <div class="footer-widget col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Information</span></h4>
                             <ul class="ft-menu">
                                 <li><a href="#">About Us</a></li>
-                                <li><a href="#">Shopping Guide</a></li>
                                 <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Our Store</a></li>
+                                <!-- <li><a href="#">Privacy Policy</a></li> -->
+                                <li><a href="{{route('shop')}}">Our Store</a></li>
                             </ul>
                         </div>
                         <!--Footer Widget end-->
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget text-lg-right text-left col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
-                            <h2>123 Widget Street Acmeville, AC-1209</h2>
-                            <p class="contact-text">demo@example.com</p>
-                            <p class="contact-text">+0123456789</p>
+                        <div class="footer-widget text-lg-right text-left col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                            <h4 class="title"><span class="text">Address</span></h4>
+                            <h5>Redemption Camp, Mowe. Ogun State.</h5>
+                            <h5>Work Of Housing, Yaba. Lagos State. </h5>                        
+                            <p class="contact-text">yusufadefurniture@gmail.com</p>
+                            <p class="contact-text">+234-80-2307-8661</p>
+                            <p class="contact-text">+234-81-3737-9072</p>
                         </div>
                         <!--Footer Widget end-->
                     </div>
@@ -454,7 +449,14 @@
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="copyright text-left">
-                                        <p class="copyright">&copy; 2021 <strong>Nelson</strong> Made with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/"><strong>HasThemes</strong></a>.</p>
+                                        <a class="social-icon" href="https://instagram.com/yusuf_ade_furniture" target="_blank">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+
+                                        <a class="social-icon" href="https://wa.me/+2348023078661" target="blank">
+                                            <ion-icon name="logo-whatsapp"></ion-icon>
+                                        </a>
+                                        <p class="copyright">&copy;<strong> Y.A Furniture </strong><i class="fa fa-heart text-danger" aria-hidden="true"></i><a href="https://emmydev10.vercel.app/" target="_blank"><strong> Made by Emmytech10 </strong></a></p>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -472,114 +474,6 @@
         </footer>
         <!--Footer section end-->
         <!-- Modal Area Strat -->
-        {{-- <div class="modal fade quick-view-modal-container" id="quick-view-modal-container" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-xl-12 col-lg-12">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <!-- Product Details Left -->
-                                    <div class="product-details-left">
-                                        <div class="product-details-images">
-                                            <div class="lg-image">
-                                                <img src="assets/images/product/large-product/l-product-1.jpg" alt="">
-                                            </div>
-                                            <div class="lg-image">
-                                                <img src="assets/images/product/large-product/l-product-2.jpg" alt="">
-                                            </div>
-                                            <div class="lg-image">
-                                                <img src="assets/images/product/large-product/l-product-3.jpg" alt="">
-                                            </div>
-                                            <div class="lg-image">
-                                                <img src="assets/images/product/large-product/l-product-4.jpg" alt="">
-                                            </div>
-                                            <div class="lg-image">
-                                                <img src="assets/images/product/large-product/l-product-5.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="product-details-thumbs">
-                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-1.jpg" alt="product image thumb"></div>
-                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-2.jpg" alt="product image thumb"></div>
-                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-3.jpg" alt="product image thumb"></div>
-                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-4.jpg" alt="product image thumb"></div>
-                                            <div class="sm-image"><img src="assets/images/product/small-product/s-product-5.jpg" alt="product image thumb"></div>
-                                        </div>
-                                    </div>
-                                    <!--Product Details Left -->
-                                </div>
-                                <div class="col-lg-8 col-md-6">
-                                    <!--Product Details Content Start-->
-                                    <div class="product-details-content">
-                                        <!--Product Nav Start-->
-                                        <div class="product-nav">
-                                            <a href="#"><i class="fa fa-angle-left"></i></a>
-                                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                                        </div>
-                                        <!--Product Nav End-->
-                                        <h2>Aliquam lobortis est turpis mauris egestas eget</h2>
-                                        <div class="single-product-reviews">
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star active"></i>
-                                            <i class="fa fa-star-o"></i>
-                                            <a class="review-link" href="#">(1 customer review)</a>
-                                        </div>
-                                        <div class="single-product-price">
-                                            <span class="price new-price">$66.00</span>
-                                            <span class="regular-price">$77.00</span>
-                                        </div>
-                                        <div class="product-description">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus</p>
-                                        </div>
-                                        <div class="single-product-quantity">
-                                            <form class="add-quantity" action="#">
-                                                <div class="product-quantity">
-                                                    <input value="1" type="number">
-                                                </div>
-                                                <div class="add-to-link">
-                                                    <button class="btn"><i class="ion-bag"></i>add to cart</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="wishlist-compare-btn">
-                                            <a href="#" class="wishlist-btn">Add to Wishlist</a>
-                                            <a href="#" class="add-compare">Compare</a>
-                                        </div>
-                                        <div class="product-meta">
-                                            <span class="posted-in">
-                                            Categories: 
-                                            <a href="#">Accessories</a>,
-                                            <a href="#">Electronics</a>
-                                        </span>
-                                        </div>
-                                        <div class="single-product-sharing">
-                                            <h3>Share this product</h3>
-                                            <ul>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!--Product Details Content End-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> --}}
         <!-- Modal Area End -->
     </div>
 
