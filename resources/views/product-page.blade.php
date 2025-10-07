@@ -95,7 +95,14 @@
                                         <a class="review-link" href="#">(1 customer review)</a>
                                     </div> --}}
                                     <div class="single-product-price">
-                                        <span class="price new-price">NGN {{ number_format($product->discount_price, 2) ?? number_format($product->price, 2) }}</span>
+                                        <span class="price new-price">NGN
+                                            @if ($product->discount_price > 0)
+                                                {{ number_format($product->discount_price, 2) }}
+                                            @else
+                                                {{ number_format($product->price, 2) }}
+                                                
+                                            @endif
+                                        </span>
                                         @if ($product->discount_price && $product->discount_price < $product->price)
                                             {{-- <span class="price old-price">{{ $product->price }}</span> --}}
                                             <span class="regular-price">NGN {{ number_format($product->price, 2) }}</span>
