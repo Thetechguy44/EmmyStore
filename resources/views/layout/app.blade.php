@@ -395,7 +395,7 @@
                     <div class="row">
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Opening Time</span></h4>
                             <p class="mb-15">Mon – Fri: 9AM – 5PM</p>
                             <p class="mb-15">Sat: 9AM-4PM</p>
@@ -415,7 +415,7 @@
                         <!--Footer Widget end-->
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <div class="footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Information</span></h4>
                             <ul class="ft-menu">
                                 <li><a href="#">About Us</a></li>
@@ -427,15 +427,19 @@
                         <!--Footer Widget end-->
 
                         <!--Footer Widget start-->
-                        <div class="footer-widget text-lg-right text-left col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                        <div class="footer-widget text-lg-right text-left col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
                             <h4 class="title"><span class="text">Address</span></h4>
                             <h5>Redemption Camp, Mowe. Ogun State.</h5>
-                            <h5>Work Of Housing, Yaba. Lagos State. </h5>                        
-                            <p class="contact-text">yusufadefurniture@gmail.com</p>
-                            <p class="contact-text">+234-80-2307-8661</p>
-                            <p class="contact-text">+234-81-3737-9072</p>
+                            <h5>Work Of Housing, Yaba. Lagos State. </h5>
                         </div>
                         <!--Footer Widget end-->
+
+                        <div class="footer-widget text-lg-right text-left col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-40 mb-xs-35">
+                            <h4 class="title"><span class="text">Contact</span></h4>
+                            <h5>sundayyusufadekoya@gmail.com</h5>
+                            <h5>+234-80-2307-8661</h5>
+                            <h5>+234-81-3737-9072</h5>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -118,12 +118,12 @@
                                                 <input value="1" type="number">
                                             </div> --}}
                                             <div class="add-to-link">
-                                                <a href="https://whatsapp.com" target="_blank" class="btn"><i class="fa fa-shopping-bag"></i>Buy Now</a>
+                                                <a href="https://wa.me/+2348023078661" target="_blank" class="btn"><i class="fa fa-shopping-bag"></i>Buy Now</a>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="wishlist-compare-btn">
-                                        <a href="https://whatsapp.com" target="_blank" class="wishlist-btn">Enquire</a>
+                                        <a href="https://wa.me/+2348023078661" target="_blank" class="wishlist-btn">Enquire</a>
                                         {{-- <a href="#" class="add-compare">Compare</a> --}}
                                     </div>
                                     <div class="product-meta">
