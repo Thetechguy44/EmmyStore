@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>YUSUF ADE FURNITURE || @yield('title')</title>
+    <title>Y.A FURNITURE || @yield('title')</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ asset('frontend/assets/images/New.jpg') }}" type="img/x-icon" rel="shortcut icon">
@@ -31,7 +31,7 @@
                             <div class="header-menu-area text-center">
                                 <nav class="main-menu">
                                     <ul>
-                                        <li><a href="/">YUSUF ADE FURNITURE</a>
+                                        <li><a href="/">Y.A FURNITURE</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="/"></a>
