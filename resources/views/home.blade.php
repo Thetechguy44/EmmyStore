@@ -405,8 +405,8 @@
                             <img src="{{ asset('frontend/assets/images/icons/feature-1.png') }}" class="img-fluid" alt="">
                         </div>
                         <div class="feature-content">
-                            <h4 class="title">Free home delivery</h4>
-                            <p class="short-desc">Provide free home delivery for the all product over $100 </p>
+                            <h4 class="title">Home delivery</h4>
+                            <p class="short-desc">We deliver to your doorstep</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
@@ -419,7 +419,7 @@
                         </div>
                         <div class="feature-content">
                             <h4 class="title">Quality Products</h4>
-                            <p class="short-desc">We ensure the product quality that is our main goal </p>
+                            <p class="short-desc">We ensure the product quality that is our main goal</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
@@ -431,8 +431,8 @@
                             <img src="{{ asset('frontend/assets/images/icons/feature-3.png') }}" class="img-fluid" alt="">
                         </div>
                         <div class="feature-content">
-                            <h4 class="title">3 Days Return</h4>
-                            <p class="short-desc">Provide free home delivery for the all product over $100 </p>
+                            <h4 class="title">Duration Of Work</h4>
+                            <p class="short-desc">Our furntiure works gets done and delivered within the duration of 3 weeks depending on the work you need</p>
                         </div>
                     </div>
                     <!-- Single Feature End -->
