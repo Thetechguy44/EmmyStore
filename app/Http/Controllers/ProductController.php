@@ -80,26 +80,21 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
 
-        // Validation
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'price' => 'required|numeric|min:0',
             'discount_price' => 'nullable|numeric|min:0',
-            'keep_images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'category' => 'nullable|string|max:255',
             'brand' => 'nullable|string|max:255',
             'stock' => 'nullable|integer|min:0',
-            'is_active' => 'boolean',
-            'removed_images' => 'nullable|array',
+            'is_active' => 'nullable|boolean',
+            'removed_images' => 'nullable|string',
             'default_image' => 'nullable|integer'
         ]);
 
-        // Handle validation failure
         if ($validator->fails()) {
-            return redirect()->back()
-                ->withErrors($validator)
-                ->withInput();
+            dd('Validation failed', $validator->errors()->all());
         }
 
         // Update product with validated data
