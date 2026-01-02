@@ -361,7 +361,7 @@
                     <div class="col-lg-12">
                         <div class="newsletter-content"> -->
                             <h2>About Us</h2>
-                            <p> Y.A Furniture is a reputable company committed to providing high-quality, functional, and aesthetically appealing furniture for residential and commercial spaces. We take pride in our craftsmanship, attention to detail, and use of premium materials to ensure durability and comfort. Our goal is to enhance living and working environments through innovative designs that reflect style, elegance, and practicality..</p>
+                            <p> Y.A Furniture is a reputable company committed to providing high-quality, functional, and aesthetically appealing furniture for residential and commercial spaces. We take pride in our craftsmanship, attention to detail, and use of premium materials to ensure durability and comfort. Our goal is to enhance living and working environments through innovative designs that reflect style, elegance, and practicality.</p>
                         <!-- </div> -->
                     <!-- </div> -->
                     {{-- <div class="col-lg-6">
